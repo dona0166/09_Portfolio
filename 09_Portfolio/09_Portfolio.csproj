@@ -50,7 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="IAsset.cs" />
+    <Compile Include="Asset.cs" />
     <Compile Include="PolyMorphismTests.cs" />
     <Compile Include="Portfolio.cs" />
     <Compile Include="PortFolioTests.cs" />

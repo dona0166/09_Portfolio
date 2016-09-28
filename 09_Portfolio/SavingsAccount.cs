@@ -1,6 +1,6 @@
 ﻿namespace _09_Portfolio
 {
-    public class SavingsAccount : IAsset
+    public class SavingsAccount : Asset
     {
         public SavingsAccount()
         {

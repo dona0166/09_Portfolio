@@ -3,7 +3,7 @@
 namespace _09_Portfolio
 {
     
-    public class Stock : IAsset
+    public class Stock : Asset
     {
         private string symbol;
 
@@ -46,11 +46,11 @@ namespace _09_Portfolio
         }
 
         
-        public static double TotalValue(IAsset[] any)
+        public static double TotalValue(Asset[] any)
         {
             double result = 0.0;
             
-            foreach(IAsset anasset in any)
+            foreach(Asset anasset in any)
             {
                 result += anasset.GetValue();
             }
