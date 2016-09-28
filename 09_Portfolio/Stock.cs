@@ -2,12 +2,8 @@
 
 namespace _09_Portfolio
 {
-    public interface Asset
-    {
-        double GetValue();
-       
-    }
-    public class Stock : Asset
+    
+    public class Stock : IAsset
     {
         private string symbol;
 
@@ -50,11 +46,11 @@ namespace _09_Portfolio
         }
 
         
-        public static double TotalValue(Asset[] any)
+        public static double TotalValue(IAsset[] any)
         {
             double result = 0.0;
             
-            foreach(Asset anasset in any)
+            foreach(IAsset anasset in any)
             {
                 result += anasset.GetValue();
             }

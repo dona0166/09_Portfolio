@@ -10,22 +10,22 @@ namespace _09_Portfolio
         {
 
         }
-        public List<Asset> a = new List<Asset>();
-        public Portfolio(List<Asset> alist)
+        public List<IAsset> a = new List<IAsset>();
+        public Portfolio(List<IAsset> alist)
         {
            a = alist;
         }
         public double result;
         public double GetTotalValue()
         {
-            foreach(Asset element in a)
+            foreach(IAsset element in a)
             {
                 result += element.GetValue();
             }
             return result;
         }
 
-        public void AddAsset(Asset anobject)
+        public void AddAsset(IAsset anobject)
         {
 
             a.Add(anobject);
